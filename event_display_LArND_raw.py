@@ -16,11 +16,11 @@ from paraview.simple import *
 parser = argparse.ArgumentParser()
 parser.add_argument("root_file")
 parser.add_argument("-a", "--animation",    action='store_true',    help="See a 360 deg orbit animation.")
-parser.add_argument("-c", "--color",        default="dq",           help="Select the tree entry to use as color. Default: %(default)s")
-parser.add_argument("-e", "--event",        default="0",            help="Select the event number. Default: %(default)s",                           type=int)
-parser.add_argument("-g", "--geom",         action='store_true',    help="Show rock geometry")
-parser.add_argument("-l", "--logscale",     action='store_true',    help="Show logarithmic scaled colorbar")
-parser.add_argument("-r", "--rock",         action='store_true',    help="Show rock volume")
+parser.add_argument("-c", "--color",        default="dq",           help="Select the tree entry to use as color. Default: %(default)s.")
+parser.add_argument("-e", "--event",        default="0",            help="Select the event number. Default: %(default)s.",                           type=int)
+parser.add_argument("-g", "--geom",         action='store_true',    help="Show rock geometry.")
+parser.add_argument("-l", "--logscale",     action='store_true',    help="Show logarithmic scaled colorbar.")
+parser.add_argument("-r", "--rock",         action='store_true',    help="Show rock volume.")
 args = parser.parse_args()
 
 if args.rock:
